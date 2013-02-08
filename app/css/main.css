@@ -1,0 +1,339 @@
+/* -------------------------------------------------------------------------------------------
+** Main CSS for Facebook Course Search app
+** (c) 2012 InGenius Solutions Ltd
+**  ----------------------------------------------------------------------------------------*/
+
+* { /* Minimal global reset */
+	padding: 0px;
+	margin: 0px;
+	outline: 0px;
+}
+
+body {
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	background-color:#ffffff;
+	color: #444444;
+	overflow:hidden;	/* prevents scroll bars on FB PageTabs */
+	direction: ltr;
+}
+
+.FBcanvas {
+	display: block;
+	margin: auto;
+	width: 900px;
+}
+
+.FBpage_tab {
+	display: block;
+	margin: 0;
+	width: 810px;
+}
+
+h1, h2, h3, h4, p {
+	text-align: left;
+}
+
+h1, p {
+	padding: 0px 0px 5px 0px;
+}
+
+h2, h4, h4 {
+	padding: 10px 0px 5px 0px;
+}
+
+/* --- MAIN BLOCKS -------------------------------------------------------------------------*/
+
+#hd_main {
+	display: block;
+	height: 90px;
+	background-image: url('../img/app_logo.png');
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding-left: 400px;
+	text-align: left;
+}
+
+#mn_container {
+	display: block;
+	padding: 0px 5px 10px 5px;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+#ft_sub_footer {
+	display: block;
+	margin-top: 30px;
+	border: none;
+	border-top: 1px solid #cccccc;
+	padding: 10px 0px;
+	text-align: center;
+	font-size: 11px;
+	color: #666666;
+	height: 250px;
+}
+
+#ft_get_app_link {
+	display: inline-block;
+	margin-top: 10px;
+	color: rgb(59, 89, 152);
+	font-size: 11px;
+	line-height: 1.28;
+	text-decoration: none;
+}
+
+#ft_get_app_link:hover {
+	text-decoration: underline;
+}
+
+/* --- Table formatting ------------------------------------ */
+
+table {
+	border-spacing:0;
+	border-collapse:collapse;
+}
+
+tbody td {
+	vertical-align: top;
+	text-align: left;
+	border-top: 1px solid #ffffff;
+	border-bottom: 1px solid #dddddd;
+}
+
+tr:hover {
+	background-color: #dddddd;
+	cursor: pointer;
+}
+
+.tab_col_auto {width:auto;}
+.tab_col_100 {width:100px;}
+.tab_col_150 {width:150px;}
+.tab_col_200 {width:200px;}
+.tab_col_250 {width:250px;}
+.tab_col_300 {width:300px;}
+.tab_col_350 {width:350px;}
+.tab_col_400 {width:400px;}
+.tab_col_450 {width:450px;}
+.tab_col_500 {width:500px;}
+.tab_col_550 {width:550px;}
+.tab_col_600 {width:600px;}
+.tab_col_650 {width:650px;}
+.tab_col_700 {width:700px;}
+
+.tab_row_hidden {height:2px; overflow:hidden}
+
+.hd_tab_header {
+	background-color:#cacaca;
+	height: 18px;
+	padding-top: 5px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+
+.hd_tab_header_col {
+	float: left;
+	text-align: left;
+}
+
+.hd_tab_footer {
+	background-color:#cacaca;
+	height: 18px;
+	padding: 5px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	text-align: left;
+	clear: both;
+}
+
+
+/* --- Page Navigation buttons (mimic Facebook style) ------ */
+
+.FBnavButton, .FBnavButton:visited {
+	background-color: #f7f7f8;
+	color: #333333;
+	margin: 10px 0px 0px 0px;
+	border: 1px solid #a6a6a6;
+	padding: 2px 8px 3px 8px;
+	height: 25px;
+	text-decoration: none;
+	border-radius: 3px;
+	-webkit-box-shadow: 0px 1px 0px 0px #e5e5e5;
+	box-shadow: 0px 1px 0px 0px #e5e5e5;
+	cursor:pointer;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.FBnavMiddle, .FBnavMiddle:visited,
+.FBnavRight, .FBnavRight:visited {
+	margin-left: -5px;
+}
+
+.FBnavLeft, .FBnavLeft:visited {
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-right: 1px solid #bababa;
+}
+
+.FBnavMiddle, .FBnavMiddle:visited {
+	border-radius: 0px;
+	border-left: 1px solid #bababa;
+	border-right: 1px solid #bababa;
+ }
+
+.FBnavRight, .FBnavRight:visited {
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-left: 1px solid #bababa;
+}
+
+.FBnavButton:hover, .FBnavButton:active,
+.FBnavLeft:hover,   .FBnavLeft:active,
+.FBnavMiddle:hover, .FBnavMiddle:active,
+.FBnavRight:hover,  .FBnavRight:active,
+.FBnavIcon:hover, .FBnavIcon:active {
+	background-color: #ffffff;
+}
+
+.FBnavIcon, .FBnavIcon:visited {
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: -2px;
+	padding: 0px 0px 3px 0px;
+	height: 22px;
+	width: 22px;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	filter: alpha(opacity=80);
+	-moz-opacity: 0.80;
+	-khtml-opacity: 0.80;
+	opacity: 0.80;
+}
+
+.FBnavIcon:hover, .FBnavIcon:active {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;
+}
+
+.FBtext {
+	display: inline-block;
+	color: #444444;
+	margin-top: -2px;
+	padding: 0px 3px 3px 3px;
+	height: 22px;
+	cursor:default;
+}
+
+/* NOTE: Sprite these at some point */
+.NavIconFirst {background-image: url('../img/navfirst.png');}
+.NavIconPrev  {background-image: url('../img/navprev.png');}
+.NavIconNext  {background-image: url('../img/navnext.png');}
+.NavIconLast  {background-image: url('../img/navlast.png');}
+
+/* --- PAGE SPECIFIC STYLES ----------------------------------------------------------------*/
+
+/* --- Search Page ----------------------------------------- */
+
+input[type="text"] {width:250px;}
+
+.search_spacer {height: 160px;}
+
+
+/* --- Course Details -------------------------------------- */
+
+.field_block {
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.course_title {
+	display: block;
+	text-align: left;
+	padding-bottom: 5px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.field_title {
+	display: inline-block;
+	width: 15%;
+	text-align: right;
+	min-height: 20px;
+}
+
+.field_data {
+	display: inline-block;
+	width: 74%;
+	text-align: left;
+	font-weight: bold;
+}
+
+.text_title {
+	display: block;
+	text-align: left;
+	padding-bottom: 5px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.text_data {
+	display: block;
+	text-align: left;
+	padding-bottom: 5px;
+}
+
+.table_format {
+    border: 1px solid rgb(214, 232, 240);
+}
+
+.table_format tr:hover {
+	background-color: transparent;
+	cursor: default;
+}
+
+.table_title {
+	background-color: rgb(235, 244, 251);
+	font-weight: bold;
+}
+
+.table_title, .table_data {
+    border: 1px solid rgb(214, 232, 240);
+	padding: 0.5em 1em;
+	text-align: left;
+	vertical-align: top;
+}
+
+.ProvLinkButton, .ProvLinkButton:visited {
+	display: inline-block;
+	background-color: rgb(0,33,71);
+	color:  #ffffff;
+	margin: 0px;
+	border: 0px none;
+	padding: 8px;
+	text-decoration: none;
+	cursor:pointer;
+}
+
+.ProvLinkButton:hover, .ProvLinkButton:active {
+	text-decoration: underline;
+}
+
+.ProvLinkButton + .ProvLinkButton {
+	margin-left: 25px;
+}
+
+/* --- Overrides and layout effects ------------------------ */
+
+.align_left {text-align: left;}
+.align_right {text-align: right;}
+
+.float_container {clear: both;}
+.float_left  {float: left; width: 50%; text-align: left;}
+.float_right {float: right; width: 50%; text-align: right;}
+
+.no_left_border {border-left: none;}
+.no_right_border {border-right: none;}

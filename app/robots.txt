@@ -1,0 +1,3 @@
+# robots.txt - InGenius Solutions Ltd
+User-Agent: *
+Disallow: /
